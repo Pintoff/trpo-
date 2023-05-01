@@ -1,0 +1,239 @@
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: gray;
+  }
+  
+  .header-block {
+    padding: 10px;
+  }
+  
+  .icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .icon {
+    width: 80px;
+    height: 80px;
+    margin: 5px;
+    background-color: white;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    border: 1px solid gray;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 200px;
+  }
+  
+  .menu ul li {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .menu ul li a {
+    text-decoration: none;
+    color: black;
+  }
+  
+  .active {
+    display: block;
+  }
+
+  #material-types-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    z-index: 100;
+    text-align: center;
+}
+#material-types-modal > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.table {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.table td, .table th {
+    border: 1px solid #ccc;
+    padding: 5px;
+}
+.table th {
+    background-color: #f0f0f0;
+}
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.modal-title {
+    font-size: 24px;
+    line-height: 32px;
+    text-align: center;
+}
+.modal-close {
+    font-size: 30px;
+    line-height: 32px;
+    text-decoration: none;
+    color: #333;
+    opacity: 0.5;
+}
+.modal-close:hover {
+    opacity: 1;
+}
+.modal-form {
+    margin-bottom: 20px;
+}
+.modal-input {
+    display: block;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+.modal-buttons {
+    display: flex;
+    justify-content: center;
+}
+.modal-button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin: 0 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.modal-button:hover {
+    background-color: #444;
+}
+
+
+
+
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 32px;
+  }
+
+  .modal-overlay {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    z-index: 10;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modal {
+    background-color: #fff;
+    border-radius: 5px;
+    overflow: hidden;
+    width: 800px;
+  }
+
+  .modal-header {
+    background-color: #333;
+    color: #fff;
+    font-size: 24px;
+    line-height: 32px;
+    padding: 20px;
+  }
+
+  .modal-close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  table td,
+  table th {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background-color: wheat;
+  }
+
+  table th {
+    background-color: #f0f0f0;
+  }
+
+  .modal-form {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .modal-form input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 1;
+    box-sizing: border-box;
+  }
+
+  .modal-form button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex-shrink: 0;
+  }
+
+  .modal-form button:hover {
+    background-color: #444;
+  }

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="header-block">Справочники</div>
+        <div class="header-block">Расположение</div>
+        <div class="header-block">Кадры</div>
+        <div class="header-block">Документы</div>
+      </header>
+      <div class="content">
+        <div class="menu">
+            <ul>
+              <li><a href="#">Партнеры</a></li>
+              <li><a href="#" id="material-types-link">Типы материалов</a></li>
+              <li><a href="#">Контейнеры</a></li>
+              <li><a href="#">Весы</a></li>
+              <li><a href="#">Материалы</a></li>
+            </ul>
+          </div>
+          <div id="material-types-modal" style="display:none">
+            <div style="position:absolute; left: 62%; top: 45%;"><a href="#" id="material-types-close">X</a></div>
+            <div class="table-wrapper">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Тип материала</th>
+                            <th>Изотоп 1</th>
+                            <th>Изотоп 2</th>
+                            <th>Изотоп 3</th>
+                            <th>Масса 1</th>
+                            <th>Масса 2</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Материал 1</td>
+                            <td>1.1</td>
+                            <td>2.2</td>
+                            <td>3.3</td>
+                            <td>10</td>
+                            <td>20</td>
+                        </tr>
+                        <tr>
+                            <td>Материал 2</td>
+                            <td>1.2</td>
+                            <td>2.3</td>
+                            <td>3.4</td>
+                            <td>15</td>
+                            <td>25</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            
+            <div>
+                <input type="text" placeholder="Новый тип материала">
+            </div>
+            <div>
+                <button>Добавить</button>
+                <button>Редактировать</button>
+                <button>Удалить</button>
+                <button>Выход</button>
+            </div>
+        </div>
+          <div class="icons">
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+            <div class="icon"></div>
+          </div>
+      </div>
+      <script src="script.js"></script>
+</body>
+</html>
